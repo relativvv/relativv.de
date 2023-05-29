@@ -1,0 +1,27 @@
+:host {
+  .container {
+    width: 500px;
+    height: 250px;
+    background-color: #313131;
+    border-radius: 15px;
+    padding-top: 1px;
+    padding-left: 20px;
+    transition: 0.2s;
+
+    h2 {
+      letter-spacing: 2px;
+    }
+
+    &__programming-languages {
+      display: flex;
+      gap: 20px;
+      position: relative;
+      top: 80px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+    }
+  }
+}
