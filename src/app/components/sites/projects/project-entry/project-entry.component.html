@@ -1,0 +1,9 @@
+<div class="container" (click)="openLink(project.gitHubLink)">
+  <h2>{{ project.displayName }}</h2>
+  <p>{{ project.displayName }}</p>
+  <div class="container__programming-languages">
+    <app-programming-language *ngFor="let language of project.programmingLanguages"
+      [programmingLanguage]="language">
+    </app-programming-language>
+  </div>
+</div>

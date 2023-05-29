@@ -1,0 +1,9 @@
+<div class="container">
+  <h2>Projects</h2>
+  <hr />
+  <div class="container__projects">
+    <app-project-entry *ngFor="let project of projects"
+      [project]="project">
+    </app-project-entry>
+  </div>
+</div>
