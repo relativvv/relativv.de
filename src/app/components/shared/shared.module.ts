@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationItemComponent } from './navigation/navigation-item/navigation-item.component';
 import { MatIconModule } from "@angular/material/icon";
+import {RouterLink} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -11,9 +12,10 @@ import { MatIconModule } from "@angular/material/icon";
   ],
   imports: [
     CommonModule,
-    MatIconModule
+    MatIconModule,
+    RouterLink
   ],
-  exports: [  
+  exports: [
     NavigationComponent
   ]
 })
