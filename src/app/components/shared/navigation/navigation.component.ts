@@ -10,30 +10,16 @@ import {Router} from "@angular/router";
 export class NavigationComponent {
 
   public navItems: NavigationItem[];
+  public current: string;
 
   constructor(
-    private readonly router: Router
+    public readonly router: Router
   ) {
     this.navItems = [
-      { displayName: 'Home', iconName: 'home' },
-      { displayName: 'Projects', iconName: 'code' },
-      { displayName: 'Skills', iconName: 'fitness_center' },
-      { displayName: 'Tech', iconName: 'computer' },
+      { displayName: 'Home', iconName: 'home', routerLink: '/home' },
+      { displayName: 'Projects', iconName: 'code', routerLink: '/projects' },
+      { displayName: 'Skills', iconName: 'fitness_center', routerLink: '/skills' },
+      { displayName: 'Tech', iconName: 'computer', routerLink: '/tech' },
     ];
-
-    switch(this.router.url) {
-      case '/projects':
-        break;
-
-      case '/skills':
-        break;
-
-      case '/tech':
-        break;
-
-      case '/home':
-      default:
-        break;
-    }
   }
 }
