@@ -7,4 +7,20 @@ import { Component } from '@angular/core';
 })
 export class ProfileComponent {
 
+  text = "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem" +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    "Lorem ipsum dolor sit ame Lorem ipsum dolor sit ame Lorem " +
+    " "
+
 }

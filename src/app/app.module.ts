@@ -11,13 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   declarations: [
     AppComponent,
   ],
-  imports: [
-    SharedModule,
-    SitesModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        SharedModule,
+        SitesModule,
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
