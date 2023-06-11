@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {Skill} from "../../../models/skill.model";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-skills',
@@ -7,6 +8,10 @@ import {Skill} from "../../../models/skill.model";
   styleUrls: ['./skills.component.less']
 })
 export class SkillsComponent {
+
+  constructor(private readonly title: Title) {
+    this.title.setTitle('relativv.de Portfolio | Skills')
+  }
 
   public frameworks: Skill[] = [
     {

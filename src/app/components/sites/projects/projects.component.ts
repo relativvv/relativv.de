@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {GitHubRepository, ProgrammingLanguage, Project} from "../../../models/project.model";
 import {GithubService} from "../../../services/github.service";
 import {forkJoin, switchMap} from "rxjs";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-projects',
@@ -12,7 +13,11 @@ export class ProjectsComponent {
 
   projects: Project[];
 
-  constructor(private readonly githubService: GithubService) {
+  constructor(
+    private readonly githubService: GithubService,
+    private readonly title: Title
+  ) {
+    this.title.setTitle('relativv.de Portfolio | Projects')
     this.githubService.getRepositories()
       .pipe(
         switchMap((repositories: GitHubRepository[]) => {
