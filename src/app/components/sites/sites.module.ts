@@ -7,6 +7,11 @@ import {NgxTypedJsModule} from "ngx-typed-js";
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectEntryComponent } from './projects/project-entry/project-entry.component';
 import { ProgrammingLanguageComponent } from './projects/project-entry/programming-language/programming-language.component';
+import { SkillsComponent } from './skills/skills.component';
+import {MatProgressBarModule} from "@angular/material/progress-bar";
+import { SkillComponent } from './skills/skill/skill.component';
+import {NgProgressModule} from "ngx-progressbar";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -14,12 +19,17 @@ import { ProgrammingLanguageComponent } from './projects/project-entry/programmi
     ProfileComponent,
     ProjectsComponent,
     ProjectEntryComponent,
-    ProgrammingLanguageComponent
+    ProgrammingLanguageComponent,
+    SkillsComponent,
+    SkillComponent
   ],
   imports: [
     CommonModule,
     NgOptimizedImage,
     NgxTypedJsModule,
+    MatProgressBarModule,
+    NgProgressModule,
+    MatTooltipModule,
   ]
 })
 export class SitesModule { }

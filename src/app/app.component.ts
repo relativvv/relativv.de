@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     if(this.router.url === '/') {
-      this.router.navigate(['/home']);
+      //this.router.navigate(['/home']);
     }
   }
 }

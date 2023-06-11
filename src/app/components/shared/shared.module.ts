@@ -4,17 +4,19 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { NavigationItemComponent } from './navigation/navigation-item/navigation-item.component';
 import { MatIconModule } from "@angular/material/icon";
 import {RouterLink} from "@angular/router";
+import {MatTooltipModule} from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
     NavigationComponent,
     NavigationItemComponent
   ],
-  imports: [
-    CommonModule,
-    MatIconModule,
-    RouterLink
-  ],
+    imports: [
+        CommonModule,
+        MatIconModule,
+        RouterLink,
+        MatTooltipModule
+    ],
   exports: [
     NavigationComponent
   ]
