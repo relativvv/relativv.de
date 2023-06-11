@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Frameworks</h2>
+  <div class="container__skill-content">
+    <app-skill *ngFor="let framework of frameworks"
+               [name]="framework.name"
+               [value]="framework.value">
+    </app-skill>
+  </div>
+
+  <hr />
+
+  <h2>Programming languages</h2>
+  <div class="container__skill-content">
+    <app-skill *ngFor="let programmingLanguage of programmingLanguages"
+               [name]="programmingLanguage.name"
+               [value]="programmingLanguage.value">
+    </app-skill>
+  </div>
+
+  <hr />
+
+  <h2>DevOps</h2>
+  <div class="container__skill-content">
+    <app-skill *ngFor="let devOps of devOpsList"
+               [name]="devOps.name"
+               [value]="devOps.value">
+    </app-skill>
+  </div>
+
+  <hr />
+
+  <h2>Other</h2>
+  <div class="container__skill-content">
+    <app-skill *ngFor="let other of others"
+               [name]="other.name"
+               [value]="other.value">
+    </app-skill>
+  </div>
+</div>

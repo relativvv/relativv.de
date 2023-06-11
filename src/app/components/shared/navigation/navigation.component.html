@@ -1,8 +1,10 @@
 <div class="container">
     <app-navigation-item *ngFor="let item of navItems"
+                         matTooltipPosition="right"
                          [routerLink]="item.routerLink"
                          [class.active]="router.url == '/' + item.displayName.toLowerCase()"
                          [iconName]="item.iconName"
+                         [matTooltip]="item.displayName"
                          [displayName]="item.displayName">
     </app-navigation-item>
 </div>
