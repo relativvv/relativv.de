@@ -12,6 +12,7 @@ import {MatProgressBarModule} from "@angular/material/progress-bar";
 import { SkillComponent } from './skills/skill/skill.component';
 import {NgProgressModule} from "ngx-progressbar";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { TechComponent } from './tech/tech.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatTooltipModule} from "@angular/material/tooltip";
     ProjectEntryComponent,
     ProgrammingLanguageComponent,
     SkillsComponent,
-    SkillComponent
+    SkillComponent,
+    TechComponent
   ],
   imports: [
     CommonModule,

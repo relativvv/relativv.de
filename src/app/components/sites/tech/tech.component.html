@@ -1,0 +1,23 @@
+<h1>Tech</h1>
+<div class="info">
+  <span>Take a look at the hardware and software I usually use!</span>
+</div>
+<div class="container">
+  <div class="container__item--pc">
+    <h2>PC</h2>
+    <ul>
+      <li *ngFor="let pcItem of pc">
+        <a [href]="pcItem.href">{{ pcItem.name }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="container__item--software">
+    <h2>Software</h2>
+    <ul>
+      <li *ngFor="let softwareItem of software">
+        <a [href]="softwareItem.href">{{ softwareItem.name }}</a>
+      </li>
+    </ul>
+  </div>
+</div>
