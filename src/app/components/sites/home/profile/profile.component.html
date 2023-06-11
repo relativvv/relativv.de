@@ -1,8 +1,12 @@
 <div class="container">
   <div class="container__text">
-    <ngx-typed-js [strings]="[text]" [typeSpeed]="1" [showCursor]="true">
-    <p class="typing"></p>
+    <ngx-typed-js *ngIf="!typedJsSucceed; else regularText" contentType="html" [strings]="[text]" [typeSpeed]="1" [showCursor]="true">
+      <p class="typing"></p>
     </ngx-typed-js>
+
+    <ng-template #regularText>
+      <p [innerHTML]="text"></p>
+    </ng-template>
   </div>
   <img alt="profile" src="assets/profile.jpg">
 </div>
