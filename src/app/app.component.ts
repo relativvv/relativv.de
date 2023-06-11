@@ -6,17 +6,11 @@ import {Router} from "@angular/router";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.less']
 })
-export class AppComponent implements OnInit {
-  title = 'relativv DEV | Portfolio';
+export class AppComponent {
+  title: string = 'relativv DEV | Portfolio';
 
   constructor(
     private router: Router
   ) {
-  }
-
-  ngOnInit(): void {
-    if(this.router.url === '/') {
-      //this.router.navigate(['/home']);
-    }
   }
 }

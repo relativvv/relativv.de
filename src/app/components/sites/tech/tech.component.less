@@ -1,0 +1,37 @@
+:host {
+  h1 {
+    text-align: center;
+  }
+
+  .info {
+    width: 800px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .container {
+    width: 800px;
+    margin: 100px auto auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__item {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      &--software, &--pc {
+        a {
+          font-size: 19px;
+          text-decoration: none;
+          color: #ff1744;
+        }
+      }
+    }
+  }
+}
