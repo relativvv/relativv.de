@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {TechModel} from "../../../models/tech.model";
+import {Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-tech',
@@ -7,6 +8,10 @@ import {TechModel} from "../../../models/tech.model";
   styleUrls: ['./tech.component.less']
 })
 export class TechComponent {
+
+  constructor(private readonly title: Title) {
+    this.title.setTitle('relativv.de Portfolio | Tech')
+  }
 
   public pc: TechModel[] = [
     {
