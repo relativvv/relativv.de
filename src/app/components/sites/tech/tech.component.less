@@ -10,11 +10,20 @@
   }
 
   .container {
-    width: 800px;
+    max-width: 800px;
     margin: 100px auto auto;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
+
+    @media(max-width: 1400px) {
+      max-width: 80%;
+    }
+
+    @media(max-width: 720px) {
+      margin-left: 124px;
+    }
 
     &__item {
       width: 50%;

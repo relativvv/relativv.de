@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {TechModel} from "../../../models/tech.model";
-import {Title} from "@angular/platform-browser";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-tech',
@@ -9,8 +9,12 @@ import {Title} from "@angular/platform-browser";
 })
 export class TechComponent {
 
-  constructor(private readonly title: Title) {
-    this.title.setTitle('relativv.de Portfolio | Tech')
+  constructor(
+    private readonly title: Title,
+    private readonly meta: Meta
+  ) {
+    this.title.setTitle(window.location.hostname + ' Portfolio | Tech');
+    this.meta.updateTag({ name: 'description', content: 'Tech component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This page shows the tech stack from Robin Schulte' });
   }
 
   public pc: TechModel[] = [

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Title} from "@angular/platform-browser";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-home',
@@ -8,8 +8,11 @@ import {Title} from "@angular/platform-browser";
 })
 export class HomeComponent {
 
-  constructor(private readonly title: Title) {
-    this.title.setTitle('relativv.de Portfolio | Home')
+  constructor(
+    private readonly title: Title,
+    private readonly meta: Meta
+  ) {
+    this.title.setTitle(window.location.hostname + ' Portfolio | Home')
+    this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer' })
   }
-
 }

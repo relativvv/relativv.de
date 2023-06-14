@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Skill} from "../../../models/skill.model";
-import {Title} from "@angular/platform-browser";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-skills',
@@ -9,8 +9,12 @@ import {Title} from "@angular/platform-browser";
 })
 export class SkillsComponent {
 
-  constructor(private readonly title: Title) {
-    this.title.setTitle('relativv.de Portfolio | Skills')
+  constructor(
+    private readonly title: Title,
+    private readonly meta: Meta
+  ) {
+    this.title.setTitle(window.location.hostname + ' Portfolio | Skills');
+    this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This is the component to see the Skillset from Robin Schulte' });
   }
 
   public frameworks: Skill[] = [

@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {GitHubRepository, ProgrammingLanguage, Project} from "../../../models/project.model";
 import {GithubService} from "../../../services/github.service";
 import {forkJoin, switchMap} from "rxjs";
-import {Title} from "@angular/platform-browser";
+import {Meta, Title} from "@angular/platform-browser";
 
 @Component({
   selector: 'app-projects',
@@ -15,9 +15,11 @@ export class ProjectsComponent {
 
   constructor(
     private readonly githubService: GithubService,
-    private readonly title: Title
+    private readonly title: Title,
+    private readonly meta: Meta
   ) {
-    this.title.setTitle('relativv.de Portfolio | Projects')
+    this.title.setTitle(window.location.hostname + ' Portfolio | Projects');
+    this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This is the component, connected to Github, to see all open source projects where Robin Schulte contributed' });
     this.githubService.getRepositories()
       .pipe(
         switchMap((repositories: GitHubRepository[]) => {

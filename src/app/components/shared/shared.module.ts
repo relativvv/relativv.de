@@ -5,11 +5,13 @@ import { NavigationItemComponent } from './navigation/navigation-item/navigation
 import { MatIconModule } from "@angular/material/icon";
 import {RouterLink} from "@angular/router";
 import {MatTooltipModule} from "@angular/material/tooltip";
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     NavigationComponent,
-    NavigationItemComponent
+    NavigationItemComponent,
+    FooterComponent
   ],
     imports: [
         CommonModule,
@@ -17,8 +19,9 @@ import {MatTooltipModule} from "@angular/material/tooltip";
         RouterLink,
         MatTooltipModule
     ],
-  exports: [
-    NavigationComponent
-  ]
+    exports: [
+        NavigationComponent,
+        FooterComponent
+    ]
 })
 export class SharedModule { }
