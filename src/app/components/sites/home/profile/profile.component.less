@@ -6,19 +6,59 @@
     justify-content: space-around;
     width: 1500px;
     margin: auto;
+    flex-wrap: wrap;
+    gap: 24px;
 
     &__text {
-      flex: 0.8;
+      flex: 1.4;
       font-size: 18px;
       line-height: 1.8em;
+      min-width: 750px;
     }
 
     img {
-      flex-shrink: 0;
-      width: 420px;
+      flex: 0.6;
+      min-width: 420px;
       border-radius: 360px;
       box-shadow: #181818 0 0 10px 0;
       min-height: 100%;
+    }
+
+    @media(max-width: 1640px) {
+      top: 30vh;
+      width: 70%;
+    }
+
+    @media(max-width: 1000px) {
+      top: 20vh;
+
+      &__text {
+        margin-top: 32px;
+        font-size: 14px;
+      }
+
+      img {
+        min-width: 250px;
+        margin-top: 32px;
+      }
+    }
+
+    @media(max-width: 915px) {
+      top: 20vh;
+
+      &__text {
+        min-width: 320px;
+        margin-left: 75px;
+      }
+    }
+
+    @media(max-width: 450px) {
+      top: 20vh;
+
+      &__text {
+        position: relative;
+        margin-left: 75px;
+      }
     }
   }
 }
