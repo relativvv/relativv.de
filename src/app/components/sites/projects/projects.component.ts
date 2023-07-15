@@ -32,7 +32,7 @@ export class ProjectsComponent {
               gitHubLink: repository.html_url
             }
           });
-          
+
           repositories.forEach((repository: GitHubRepository): void => {
             requests.push(this.githubService.getRepositoryLanguages(repository.name));
           });
