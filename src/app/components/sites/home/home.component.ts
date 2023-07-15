@@ -12,7 +12,7 @@ export class HomeComponent {
     private readonly title: Title,
     private readonly meta: Meta
   ) {
-    this.title.setTitle(window.location.hostname + ' Portfolio | Home')
+    this.title.setTitle('relativv\'s Portfolio | Home')
     this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer' })
   }
 }

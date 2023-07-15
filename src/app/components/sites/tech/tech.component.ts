@@ -13,7 +13,7 @@ export class TechComponent {
     private readonly title: Title,
     private readonly meta: Meta
   ) {
-    this.title.setTitle(window.location.hostname + ' Portfolio | Tech');
+    this.title.setTitle('relativv\'s Portfolio | Tech');
     this.meta.updateTag({ name: 'description', content: 'Tech component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This page shows the tech stack from Robin Schulte' });
   }
 
