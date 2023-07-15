@@ -18,7 +18,7 @@ export class ProjectsComponent {
     private readonly title: Title,
     private readonly meta: Meta
   ) {
-    this.title.setTitle(window.location.hostname + ' Portfolio | Projects');
+    this.title.setTitle('relativv\'s Portfolio | Projects');
     this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This is the component, connected to Github, to see all open source projects where Robin Schulte contributed' });
     this.githubService.getRepositories()
       .pipe(
@@ -32,9 +32,7 @@ export class ProjectsComponent {
               gitHubLink: repository.html_url
             }
           });
-
-          console.log(this.projects);
-
+          
           repositories.forEach((repository: GitHubRepository): void => {
             requests.push(this.githubService.getRepositoryLanguages(repository.name));
           });

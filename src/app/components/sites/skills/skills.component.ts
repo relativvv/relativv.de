@@ -13,7 +13,7 @@ export class SkillsComponent {
     private readonly title: Title,
     private readonly meta: Meta
   ) {
-    this.title.setTitle(window.location.hostname + ' Portfolio | Skills');
+    this.title.setTitle('relativv\'s Portfolio | Skills');
     this.meta.updateTag({ name: 'description', content: 'Home component of the portfolio page from Robin Schulte aka relativv, a fullstack software engineer. This is the component to see the Skillset from Robin Schulte' });
   }
 
