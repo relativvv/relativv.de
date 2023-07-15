@@ -3,7 +3,6 @@ import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { ProfileComponent } from './home/profile/profile.component';
-import {NgxTypedJsModule} from "ngx-typed-js";
 import { ProjectsComponent } from './projects/projects.component';
 import { ProjectEntryComponent } from './projects/project-entry/project-entry.component';
 import { ProgrammingLanguageComponent } from './projects/project-entry/programming-language/programming-language.component';
@@ -28,7 +27,6 @@ import { TechComponent } from './tech/tech.component';
   imports: [
     CommonModule,
     NgOptimizedImage,
-    NgxTypedJsModule,
     MatProgressBarModule,
     NgProgressModule,
     MatTooltipModule,

@@ -21,7 +21,6 @@ export class GithubService {
   }
 
   public getRepositories(): Observable<GitHubRepository[]> {
-
     return this.httpClient.get<GitHubRepository[]>(this.gitHubUrl + "/users/relativvv/repos", {headers: this.headers});
   }
 
