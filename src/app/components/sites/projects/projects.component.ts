@@ -112,6 +112,12 @@ export class ProjectsComponent {
         case 'Dockerfile':
           programmingLanguage.colorHex = '#384d54';
           break;
+        case 'Less':
+          programmingLanguage.colorHex = '#1d365d';
+          break;
+        case 'Vue':
+          programmingLanguage.colorHex = '#42b883';
+          break;
       }
     });
   }
